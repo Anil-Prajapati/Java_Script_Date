@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="bilinking">This Is The Bilinking()</h1>
+    <script>
+        function startBilinking() {
+            setInterval(function() {
+                bilinking();
+            }, 1000)
+        }
+
+        function bilinking() {
+            document.getElementById("bilinking").style.display = "none";
+            setTimeout(function() {
+                document.getElementById("bilinking").style.display = "inline";
+            }, 500)
+        }
+        startBilinking()
+    </script>
+</body>
+
+</html>

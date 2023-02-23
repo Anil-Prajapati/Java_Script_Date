@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        Date.prototype.nextday = function() {
+            var currentdate = this.getDate();
+            return new Date(date.setDate(currentdate + 1));
+
+        }
+        let date = new Date();
+        console.log('this is the current date inn indian standerd')
+        console.log(date);
+
+        console.log('this is the tommarow date in indian standerd')
+        console.log(date.nextday());
+    </script>
+</body>
+
+</html>

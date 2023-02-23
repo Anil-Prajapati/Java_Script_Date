@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //finding the different of the days 
+        let days1 = new Date(prompt('Enter the date', '2022/05/03'));
+        let days2 = new Date(prompt('Enter the Date', '2022/6/03'));
+
+        let diffTime = Math.abs(days1 - days2); //milliseconds
+        let diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
+            // document.writeln(diffTime + "=MilliSeconds <hr>")
+            // document.writeln(diffDays + "=days  <hr>");
+        document.writeln("MilliSeconds=" + diffTime + "<hr>")
+        document.writeln("days= " + diffDays);
+    </script>
+</body>
+
+</html>
